@@ -1,9 +1,13 @@
 
+import Chai from './chai'
 
 function App() {
 
   return (
-    <h1> Chai aur React with Vite | Abhinav Raj </h1>
+    <>
+    <Chai/>
+    <h3> this is a test heading </h3>
+    </>
   )
 }
 
