@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useLoaderData } from 'react-router-dom'
 
 function Github() {
-    const data = useLoaderData()
+    const data = useLoaderData()  // a react hook used to access data that was fetched before component was rendered.
     // const [data, setData] = useState([])
     // useEffect(() => {
     //  fetch('https://api.github.com/users/hiteshchoudhary')
