@@ -19,6 +19,7 @@ export const todoSlice = createSlice({         // name,initialState,reducers are
         },
         removeTodo: (state, action) => {
             state.todos = state.todos.filter((todo) => todo.id !== action.payload ) // it will compare id automatically
+            // (action.payload apne aap samaj jata hai konse key ko compare karna hai)
         },
     }
 })
