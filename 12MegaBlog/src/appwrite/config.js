@@ -98,7 +98,7 @@ export class Service{
 
     // file upload service
 
-    async uploadFile(file){
+    async uploadFile(file){      // actual blog is passed , not name of blog
         try {
             return await this.bucket.createFile(
                 conf.appwriteBucketId,
