@@ -5,7 +5,7 @@ import {useSelector} from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 
 function Header() {
-  const authStatus = useSelector((state) => state.auth.status) 
+  const authStatus = useSelector((state) => state.auth.status)  // status from authSlice
   const navigate = useNavigate()  // navigate needs a url or /signUp , /login and navigates to that page
 
   const navItems = [
@@ -48,7 +48,7 @@ function Header() {
             </Link>
           </div>
           <ul className='flex ml-auto'>
-            {navItems.map((item) => 
+            {navItems.map((item) =>   // item is every object in the navItems array
             item.active ? (
               <li key={item.name}>
                 <button
@@ -65,7 +65,7 @@ function Header() {
             )}
           </ul>
         </nav>
-        </Container>
+      </Container>
     </header>
   )
 }
